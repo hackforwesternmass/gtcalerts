@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"GtC Alerts";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,15 +30,19 @@
     
     if (sender == self.volunteerButton) {
         vc.pushLabelText = @"Volunteer Push Notifications";
+        vc.title = @"Volunteer";
     }
     else if (sender == self.eventsButton) {
         vc.pushLabelText = @"Events Push Notifications";
+        vc.title = @"Events";
     }
     else if (sender == self.veggiesButton) {
         vc.pushLabelText = @"Veggies Push Notifications";
+        vc.title = @"Veggies";
     }
     else if (sender == self.donateButton) {
         vc.pushLabelText = @"In-Kind Push Notifications";
+        vc.title = @"In-Kind";
     }
 }
 
