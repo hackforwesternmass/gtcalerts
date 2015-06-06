@@ -27,6 +27,18 @@ public class MainActivity extends Activity {
                     }
                 }
         );
+
+        Button button_events = (Button) findViewById(R.id.button_events);
+
+        button_events.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(MainActivity.this, EventsActivity.class);
+                        //myIntent.putExtra("key", value); //Optional parameters
+                        MainActivity.this.startActivity(myIntent);
+                    }
+                }
+        );
     }
 
     @Override
