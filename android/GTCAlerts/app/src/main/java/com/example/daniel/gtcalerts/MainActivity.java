@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
 
 
 public class MainActivity extends Activity {
@@ -12,6 +15,18 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button_volunteer = (Button) findViewById(R.id.button_volunteer);
+
+        button_volunteer.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(MainActivity.this, VolunteerActivity.class);
+                        //myIntent.putExtra("key", value); //Optional parameters
+                        MainActivity.this.startActivity(myIntent);
+                    }
+                }
+        );
     }
 
     @Override
