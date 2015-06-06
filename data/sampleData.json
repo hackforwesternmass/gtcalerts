@@ -1,0 +1,90 @@
+{
+"volunteers" : [
+{
+	"date": "Aug 22 11am – 2pm",
+	"title": "Rep Your Block Volunteer Day",
+	"text": "Come volunteer with GtC and represent your neighborhood. We want to see which neighborhood can bring the most volunteers. Team with the most volunteers will get a special prize. Contact Toussaint at thope413@gmail.com"
+},
+{
+	"date": "Aug 8 11am – 2pm",
+	"title": "Community Impact Day",
+	"text": "So much growing! So much work! Come volunteer with GtC and learn more about our work and our mission. We’ll have good food and good conversation. Contact Toussaint at thope413@gmail.com"
+},
+{
+	"date": "July 25 11:00am",
+	"title": "Family Volunteer Day",
+	"text": "We’re looking for families to come and volunteer with GtC. We’ll have volunteer activities for all age levels.  Register today at gtcspringfield@gmail.com"
+},
+{
+	"date": "July 8 5:30pm",
+	"title": "College Volunteer Day",
+	"text": "Come volunteer with GtC and represent your college. We want to see which colege can bring the most volunteers. Team with the most volunteers will get a special prize. Contact Toussaint at thope413@gmail.com"
+}
+],
+"events" : [
+{
+	"date": "Aug 15 11:00am",
+	"title": "Plant Sale and Gardener’s Gathering",
+	"text": "Join us for our 4th Annual Plant Sale and Gardener’s Gathering. Get your annual and perennial plants and learn how to create your own backyard garden. Plenty of workshops, food, and fun. Contact Toussaint at thope413@gmail.com"
+},
+{
+  "date": "Aug 1 4:30pm",
+  "title": "GtC Summer Potluck",
+  "text": "Come out and meet your neighbors. We’ll be swapping garden stories and good eats. We’ll be giving tours of the GtC gardens and inviting folks to sign up for our GtC Eats CSA program. Fun for the whole family."
+},
+{
+  "date": "June 23 11:00am",
+  "title": "Garden Bike Tour Fundraiser",
+  "text": "Come bike with us! We’ll be visiting community gardens all over the city and raising money for GtC. Here about the history of urban agriculture in the city of Springfield.  Register today at gtcspringfield@gmail.com"
+},
+{
+  "date": "June 18 5:30pm",
+  "title": "GtC Youth Presentations",
+  "text": "Come meet our GtC youth and hear about what they’ve been learning in through the GtC youth leadership program. Refreshments will be served. Please RSVP at gtcspringfield@gmail.com"
+}
+],
+"veggies" : [
+{
+  "date": "Aug 20 4-6:30pm",
+  "title": "Tomatoes Available",
+  "text": "We have plenty of tomatoes available $1/lb.  Available until it’s gone."
+},
+{
+  "date": "Aug 15 4-6:30pm",
+  "title": "Bush Beans pick your own [FREE]",
+  "text": "Show up today for our pick your own feature of the week: Bush Beans!"
+},
+{
+  "date": "Aug 1 4-6:30pm",
+  "title": "Eggplant Available",
+  "text": "We have plenty of eggplant available $.50/lb.  Available until it’s gone."
+},
+{
+  "date": "July 29 4-6:30pm",
+  "title": "Zucchini Available",
+  "text": "We have plenty of zucchini available $1/lb.  Available until it’s gone."
+}
+],
+"donations" : [
+{
+  "date": "Aug 22",
+  "title": "Garden Gloves Needed",
+  "text": "We’re looking for garden gloves for our big upcoming volunteer day. Please bring donations to 326 Hancock St. Mon-Fri 9am – 2pm or to the GtC office at the Enterprise Center on State St. Please email gtcspringfield@gmail.com for more info."
+},
+{
+  "date": "Aug 8",
+  "title": "GtC Bike Drive",
+  "text": "We’re looking for bikes for our youth. GtC delivers veggies throughout the neighborhood on bikes and trailers. We also deliver our veggies to market this way. While we have a few bikes, we’d like to expand our work with more bikes, to do more veggie deliveries. Please bring donations to 326 Hancock St. Mon-Fri 9am – 2pm or to the GtC office at the Enterprise Center on State St. Please email gtcspringfield@gmail.com for more info."
+},
+{
+  "date": "July 25",
+  "title": "Mulch Hay Needed",
+  "text": "We’re looking for hay mulch for our big upcoming volunteer day. Please bring donations to 326 Hancock St. Mon-Fri 9am – 2pm. Please email gtcspringfield@gmail.com for more info."
+},
+{
+  "date": "July 8 5:30pm",
+  "title": "Garden Hoses Needed",
+  "text": "We’re looking for garden hoses for our garden. Please bring donations to 326 Hancock St. Mon-Fri 9am – 2pm. Please email gtcspringfield@gmail.com for more info."
+}
+]
+}
