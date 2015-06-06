@@ -47,6 +47,7 @@
     NotificationDetailViewController *vc = segue.destinationViewController;
     vc.titleText = @"Impact Day";
     vc.detailsText = @"We are going to make some impact!";
+    vc.title = @"Impact Day";
 }
 
 /*
