@@ -16,6 +16,7 @@
 		9AD815041B235486003F1416 /* GtC_AlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD815031B235486003F1416 /* GtC_AlertsTests.m */; };
 		9AD8150F1B2367C0003F1416 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8150E1B2367C0003F1416 /* NotificationViewController.m */; };
 		9AD815131B236E48003F1416 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD815121B236E48003F1416 /* NotificationTableViewCell.m */; };
+		9AD815161B237413003F1416 /* NotificationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD815151B237413003F1416 /* NotificationDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		9AD8150E1B2367C0003F1416 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		9AD815111B236E48003F1416 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
 		9AD815121B236E48003F1416 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
+		9AD815141B237413003F1416 /* NotificationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDetailViewController.h; sourceTree = "<group>"; };
+		9AD815151B237413003F1416 /* NotificationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				9AD8150E1B2367C0003F1416 /* NotificationViewController.m */,
 				9AD815111B236E48003F1416 /* NotificationTableViewCell.h */,
 				9AD815121B236E48003F1416 /* NotificationTableViewCell.m */,
+				9AD815141B237413003F1416 /* NotificationDetailViewController.h */,
+				9AD815151B237413003F1416 /* NotificationDetailViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD815161B237413003F1416 /* NotificationDetailViewController.m in Sources */,
 				9AD814F01B235485003F1416 /* ViewController.m in Sources */,
 				9AD8150F1B2367C0003F1416 /* NotificationViewController.m in Sources */,
 				9AD815131B236E48003F1416 /* NotificationTableViewCell.m in Sources */,
