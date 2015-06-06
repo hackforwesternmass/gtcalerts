@@ -39,6 +39,31 @@ public class MainActivity extends Activity {
                     }
                 }
         );
+
+        Button button_veggies = (Button) findViewById(R.id.button_veggies);
+
+        button_veggies.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(MainActivity.this, VeggiesActivity.class);
+                        //myIntent.putExtra("key", value); //Optional parameters
+                        MainActivity.this.startActivity(myIntent);
+                    }
+                }
+        );
+
+        Button button_kind = (Button) findViewById(R.id.button_kind);
+
+        button_kind.setOnClickListener(
+                new Button.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(MainActivity.this, KindActivity.class);
+                        //myIntent.putExtra("key", value); //Optional parameters
+                        MainActivity.this.startActivity(myIntent);
+                    }
+                }
+        );
+
     }
 
     @Override
