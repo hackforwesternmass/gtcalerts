@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NotificationViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NotificationViewController *vc = segue.destinationViewController;
+    
+    if (sender == self.volunteerButton) {
+        vc.pushLabelText = @"Volunteer Push Notifications";
+    }
+    else if (sender == self.eventsButton) {
+        vc.pushLabelText = @"Events Push Notifications";
+    }
+    else if (sender == self.veggiesButton) {
+        vc.pushLabelText = @"Veggies Push Notifications";
+    }
+    else if (sender == self.donateButton) {
+        vc.pushLabelText = @"In-Kind Push Notifications";
+    }
 }
 
 @end
