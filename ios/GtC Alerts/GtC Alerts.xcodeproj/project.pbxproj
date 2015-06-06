@@ -14,6 +14,8 @@
 		9AD814F51B235485003F1416 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD814F41B235485003F1416 /* Images.xcassets */; };
 		9AD814F81B235485003F1416 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD814F61B235485003F1416 /* LaunchScreen.xib */; };
 		9AD815041B235486003F1416 /* GtC_AlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD815031B235486003F1416 /* GtC_AlertsTests.m */; };
+		9AD8150F1B2367C0003F1416 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8150E1B2367C0003F1416 /* NotificationViewController.m */; };
+		9AD815131B236E48003F1416 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD815121B236E48003F1416 /* NotificationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9AD814FD1B235486003F1416 /* GtC AlertsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GtC AlertsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD815021B235486003F1416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD815031B235486003F1416 /* GtC_AlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GtC_AlertsTests.m; sourceTree = "<group>"; };
+		9AD8150D1B2367C0003F1416 /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		9AD8150E1B2367C0003F1416 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		9AD815111B236E48003F1416 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
+		9AD815121B236E48003F1416 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,9 @@
 		9AD814E61B235485003F1416 /* GtC Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				9AD815101B2367DE003F1416 /* ViewControllers */,
 				9AD814EB1B235485003F1416 /* AppDelegate.h */,
 				9AD814EC1B235485003F1416 /* AppDelegate.m */,
-				9AD814EE1B235485003F1416 /* ViewController.h */,
-				9AD814EF1B235485003F1416 /* ViewController.m */,
 				9AD814F11B235485003F1416 /* Main.storyboard */,
 				9AD814F41B235485003F1416 /* Images.xcassets */,
 				9AD814F61B235485003F1416 /* LaunchScreen.xib */,
@@ -117,6 +122,19 @@
 				9AD815021B235486003F1416 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AD815101B2367DE003F1416 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AD814EE1B235485003F1416 /* ViewController.h */,
+				9AD814EF1B235485003F1416 /* ViewController.m */,
+				9AD8150D1B2367C0003F1416 /* NotificationViewController.h */,
+				9AD8150E1B2367C0003F1416 /* NotificationViewController.m */,
+				9AD815111B236E48003F1416 /* NotificationTableViewCell.h */,
+				9AD815121B236E48003F1416 /* NotificationTableViewCell.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD814F01B235485003F1416 /* ViewController.m in Sources */,
+				9AD8150F1B2367C0003F1416 /* NotificationViewController.m in Sources */,
+				9AD815131B236E48003F1416 /* NotificationTableViewCell.m in Sources */,
 				9AD814ED1B235485003F1416 /* AppDelegate.m in Sources */,
 				9AD814EA1B235485003F1416 /* main.m in Sources */,
 			);

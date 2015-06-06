@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIButton *volunteerButton;
+@property (nonatomic, strong) IBOutlet UIButton *eventsButton;
+@property (nonatomic, strong) IBOutlet UIButton *veggiesButton;
+@property (nonatomic, strong) IBOutlet UIButton *donateButton;
 
 @end
 
