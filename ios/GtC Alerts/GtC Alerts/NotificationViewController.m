@@ -8,6 +8,7 @@
 
 #import "NotificationViewController.h"
 #import "NotificationTableViewCell.h"
+#import "NotificationDetailViewController.h"
 
 @interface NotificationViewController ()
 
@@ -40,6 +41,13 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NotificationDetailViewController *vc = segue.destinationViewController;
+    vc.titleText = @"Impact Day";
+    vc.detailsText = @"We are going to make some impact!";
+    vc.title = @"Impact Day";
 }
 
 /*

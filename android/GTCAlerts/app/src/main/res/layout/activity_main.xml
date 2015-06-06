@@ -14,8 +14,34 @@
         android:layout_height="wrap_content"
         android:text="Volunteer"
         android:id="@+id/button_volunteer"
-        android:layout_marginTop="45dp"
         android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:id="@+id/button_events"
+        android:layout_below="@+id/button_volunteer"
+        android:layout_alignRight="@+id/button_veggies"
+        android:layout_alignEnd="@+id/button_veggies" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Kind"
+        android:id="@+id/button_kind"
+        android:layout_below="@+id/button_veggies"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veggies"
+        android:id="@+id/button_veggies"
+        android:layout_below="@+id/button_events"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
