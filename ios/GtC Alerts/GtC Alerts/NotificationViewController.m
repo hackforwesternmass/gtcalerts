@@ -33,6 +33,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)switchValueChanged:(UISwitch *)pushSwitch {
+    if (pushSwitch.on) {
+        [self askForPush:self.channel];
+    } else {
+        [self removeFromPush:self.channel];
+    }
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"];
     cell.dateLabel.text = self.data[indexPath.row][@"date"];

@@ -96,7 +96,6 @@
                             <constraint firstItem="nVr-z1-G0g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="iNo-LI-V31"/>
                             <constraint firstItem="fqk-Lp-VjR" firstAttribute="height" secondItem="nVr-z1-G0g" secondAttribute="height" id="jpf-ol-FX1"/>
                             <constraint firstItem="grJ-ph-q8K" firstAttribute="top" secondItem="fqk-Lp-VjR" secondAttribute="bottom" id="jy4-AP-QXu"/>
-                            <constraint firstItem="j8K-Hz-DcB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="5" id="kTb-Yx-CdW"/>
                             <constraint firstItem="j8K-Hz-DcB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="m6f-0L-KqS"/>
                             <constraint firstAttribute="centerX" secondItem="grJ-ph-q8K" secondAttribute="centerX" id="mvQ-Ed-798"/>
                             <constraint firstItem="e1n-Wp-bPi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="umW-sV-CXf"/>
@@ -145,6 +144,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a7I-Vd-qJb">
                                         <rect key="frame" x="541" y="12" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="ojG-Ul-WqA" eventType="valueChanged" id="H1Q-I5-DKX"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

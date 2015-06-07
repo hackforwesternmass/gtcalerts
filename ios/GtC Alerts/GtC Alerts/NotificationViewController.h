@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTCBaseViewController.h"
 
-@interface NotificationViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface NotificationViewController : GTCBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSString *pushLabelText;
 @property (nonatomic, strong) NSArray *data;
+@property (nonatomic, strong) NSString *channel;
 
 @property (nonatomic, strong) UIColor *bgColor;
 
@@ -19,4 +21,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *allowPushLabel;
 @property (nonatomic, strong) IBOutlet UISwitch *allowPushSwitch;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+-(IBAction)switchValueChanged:(UISwitch *)sender;
+
 @end

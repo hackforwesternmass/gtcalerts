@@ -23,11 +23,13 @@
     NSError *error;
     //-- Make URL request with server
     NSHTTPURLResponse *response = nil;
-    NSString *jsonUrlString = [NSString stringWithFormat:@"https://raw.githubusercontent.com/hackforwesternmass/gtcalerts/4e7f332d14c910640a40b5f2afbfbb839ec80851/data/sampleData.json"];
+    NSString *jsonUrlString = [NSString stringWithFormat:@"https://raw.githubusercontent.com/hackforwesternmass/gtcalerts/master/data/sampleData.json"];
     NSURL *url = [NSURL URLWithString:[jsonUrlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     //-- Get request and response though URL
-    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url
+                                             cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                         timeoutInterval:60.0];
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
     
     //-- JSON Parsing

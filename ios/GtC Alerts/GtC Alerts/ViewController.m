@@ -47,23 +47,24 @@
     if (sender == self.volunteerButton) {
         vc.pushLabelText = @"Volunteer Push Notifications";
         vc.title = @"Volunteer";
-        vc.data = [GTCDataModel shared].data[@"volunteers"];
+        vc.channel = @"volunteers";
     }
     else if (sender == self.eventsButton) {
         vc.pushLabelText = @"Events Push Notifications";
         vc.title = @"Events";
-        vc.data = [GTCDataModel shared].data[@"events"];
+        vc.channel = @"events";
     }
     else if (sender == self.veggiesButton) {
         vc.pushLabelText = @"Veggies Push Notifications";
         vc.title = @"Veggies";
-        vc.data = [GTCDataModel shared].data[@"veggies"];
+        vc.channel = @"veggies";
     }
     else if (sender == self.donateButton) {
         vc.pushLabelText = @"In-Kind Supplies Push Notifications";
         vc.title = @"In-Kind";
-        vc.data = [GTCDataModel shared].data[@"donations"];
+        vc.channel = @"donations";
     }
+    vc.data = [GTCDataModel shared].data[vc.channel];
     vc.data = [vc.data sortedArrayUsingComparator:^NSComparisonResult(NSDictionary* o1, NSDictionary* o2) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"MMM dd"];

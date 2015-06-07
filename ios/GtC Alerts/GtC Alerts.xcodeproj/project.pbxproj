@@ -10,6 +10,21 @@
 		9A5962EB1B23997C00230F31 /* GTCNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962EA1B23997C00230F31 /* GTCNavViewController.m */; };
 		9A5962EE1B23AE5300230F31 /* GTCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962ED1B23AE5300230F31 /* GTCDataModel.m */; };
 		9A5962F11B23D8E400230F31 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962F01B23D8E400230F31 /* UIColor+Utils.m */; };
+		9A5962F51B23EDDA00230F31 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962F31B23EDDA00230F31 /* Bolts.framework */; };
+		9A5962F61B23EDDA00230F31 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962F41B23EDDA00230F31 /* Parse.framework */; };
+		9A5962F81B23EE1700230F31 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962F71B23EE1700230F31 /* AudioToolbox.framework */; };
+		9A5962FA1B23EE1D00230F31 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962F91B23EE1D00230F31 /* CFNetwork.framework */; };
+		9A5962FC1B23EE2200230F31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962FB1B23EE2200230F31 /* CoreGraphics.framework */; };
+		9A5962FE1B23EE2900230F31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962FD1B23EE2900230F31 /* CoreLocation.framework */; };
+		9A5963001B23EE3000230F31 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5962FF1B23EE3000230F31 /* MobileCoreServices.framework */; };
+		9A5963021B23EE3600230F31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5963011B23EE3600230F31 /* QuartzCore.framework */; };
+		9A5963041B23EE3D00230F31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5963031B23EE3D00230F31 /* Security.framework */; };
+		9A5963061B23EE4300230F31 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5963051B23EE4300230F31 /* StoreKit.framework */; };
+		9A5963081B23EE4A00230F31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5963071B23EE4A00230F31 /* SystemConfiguration.framework */; };
+		9A59630A1B23EE5200230F31 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5963091B23EE5200230F31 /* libz.dylib */; };
+		9A59630C1B23EE5B00230F31 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A59630B1B23EE5B00230F31 /* libsqlite3.dylib */; };
+		9A59630E1B23F0CF00230F31 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A59630D1B23F0CF00230F31 /* Keys.plist */; };
+		9A5963111B23F44D00230F31 /* GTCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5963101B23F44D00230F31 /* GTCBaseViewController.m */; };
 		9AD814EA1B235485003F1416 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814E91B235485003F1416 /* main.m */; };
 		9AD814ED1B235485003F1416 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814EC1B235485003F1416 /* AppDelegate.m */; };
 		9AD814F01B235485003F1416 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814EF1B235485003F1416 /* ViewController.m */; };
@@ -39,6 +54,22 @@
 		9A5962ED1B23AE5300230F31 /* GTCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCDataModel.m; sourceTree = "<group>"; };
 		9A5962EF1B23D8E400230F31 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
 		9A5962F01B23D8E400230F31 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		9A5962F31B23EDDA00230F31 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		9A5962F41B23EDDA00230F31 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9A5962F71B23EE1700230F31 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9A5962F91B23EE1D00230F31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9A5962FB1B23EE2200230F31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A5962FD1B23EE2900230F31 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9A5962FF1B23EE3000230F31 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9A5963011B23EE3600230F31 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A5963031B23EE3D00230F31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A5963051B23EE4300230F31 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9A5963071B23EE4A00230F31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A5963091B23EE5200230F31 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9A59630B1B23EE5B00230F31 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9A59630D1B23F0CF00230F31 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		9A59630F1B23F44D00230F31 /* GTCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCBaseViewController.h; sourceTree = "<group>"; };
+		9A5963101B23F44D00230F31 /* GTCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCBaseViewController.m; sourceTree = "<group>"; };
 		9AD814E41B235485003F1416 /* GtC Alerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GtC Alerts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD814E81B235485003F1416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD814E91B235485003F1416 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +96,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A59630C1B23EE5B00230F31 /* libsqlite3.dylib in Frameworks */,
+				9A59630A1B23EE5200230F31 /* libz.dylib in Frameworks */,
+				9A5963081B23EE4A00230F31 /* SystemConfiguration.framework in Frameworks */,
+				9A5963061B23EE4300230F31 /* StoreKit.framework in Frameworks */,
+				9A5963041B23EE3D00230F31 /* Security.framework in Frameworks */,
+				9A5963021B23EE3600230F31 /* QuartzCore.framework in Frameworks */,
+				9A5963001B23EE3000230F31 /* MobileCoreServices.framework in Frameworks */,
+				9A5962FE1B23EE2900230F31 /* CoreLocation.framework in Frameworks */,
+				9A5962FC1B23EE2200230F31 /* CoreGraphics.framework in Frameworks */,
+				9A5962FA1B23EE1D00230F31 /* CFNetwork.framework in Frameworks */,
+				9A5962F81B23EE1700230F31 /* AudioToolbox.framework in Frameworks */,
+				9A5962F61B23EDDA00230F31 /* Parse.framework in Frameworks */,
+				9A5962F51B23EDDA00230F31 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +122,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A5962F21B23EDC000230F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A59630B1B23EE5B00230F31 /* libsqlite3.dylib */,
+				9A5963091B23EE5200230F31 /* libz.dylib */,
+				9A5963071B23EE4A00230F31 /* SystemConfiguration.framework */,
+				9A5963051B23EE4300230F31 /* StoreKit.framework */,
+				9A5963031B23EE3D00230F31 /* Security.framework */,
+				9A5963011B23EE3600230F31 /* QuartzCore.framework */,
+				9A5962FF1B23EE3000230F31 /* MobileCoreServices.framework */,
+				9A5962FD1B23EE2900230F31 /* CoreLocation.framework */,
+				9A5962FB1B23EE2200230F31 /* CoreGraphics.framework */,
+				9A5962F91B23EE1D00230F31 /* CFNetwork.framework */,
+				9A5962F71B23EE1700230F31 /* AudioToolbox.framework */,
+				9A5962F31B23EDDA00230F31 /* Bolts.framework */,
+				9A5962F41B23EDDA00230F31 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AD814DB1B235485003F1416 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +174,7 @@
 				9A5962ED1B23AE5300230F31 /* GTCDataModel.m */,
 				9A5962EF1B23D8E400230F31 /* UIColor+Utils.h */,
 				9A5962F01B23D8E400230F31 /* UIColor+Utils.m */,
+				9A5962F21B23EDC000230F31 /* Frameworks */,
 			);
 			path = "GtC Alerts";
 			sourceTree = "<group>";
@@ -119,6 +184,7 @@
 			children = (
 				9AD814E81B235485003F1416 /* Info.plist */,
 				9AD814E91B235485003F1416 /* main.m */,
+				9A59630D1B23F0CF00230F31 /* Keys.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +219,8 @@
 				9AD815151B237413003F1416 /* NotificationDetailViewController.m */,
 				9A5962E91B23997C00230F31 /* GTCNavViewController.h */,
 				9A5962EA1B23997C00230F31 /* GTCNavViewController.m */,
+				9A59630F1B23F44D00230F31 /* GTCBaseViewController.h */,
+				9A5963101B23F44D00230F31 /* GTCBaseViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A59630E1B23F0CF00230F31 /* Keys.plist in Resources */,
 				9AD814F31B235485003F1416 /* Main.storyboard in Resources */,
 				9AD814F81B235485003F1416 /* LaunchScreen.xib in Resources */,
 				9AD814F51B235485003F1416 /* Images.xcassets in Resources */,
@@ -265,6 +334,7 @@
 				9A5962EB1B23997C00230F31 /* GTCNavViewController.m in Sources */,
 				9AD814ED1B235485003F1416 /* AppDelegate.m in Sources */,
 				9A5962F11B23D8E400230F31 /* UIColor+Utils.m in Sources */,
+				9A5963111B23F44D00230F31 /* GTCBaseViewController.m in Sources */,
 				9AD814EA1B235485003F1416 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +461,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GtC",
+					Alerts,
+				);
 				INFOPLIST_FILE = "GtC Alerts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +476,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GtC",
+					Alerts,
+				);
 				INFOPLIST_FILE = "GtC Alerts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
