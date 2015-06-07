@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSString *titleText;
 @property (nonatomic, strong) NSString *detailsText;
 
+@property (nonatomic, strong) UIColor *bgColor;
+
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (nonatomic, strong) IBOutlet UITextView *detailsTextView;
 

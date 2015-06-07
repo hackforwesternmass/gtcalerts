@@ -15,5 +15,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *veggiesButton;
 @property (nonatomic, strong) IBOutlet UIButton *donateButton;
 
+@property (nonatomic, strong) IBOutlet UIImageView *bgImage;
+
 @end
 

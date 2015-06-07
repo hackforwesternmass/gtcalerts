@@ -9,6 +9,7 @@
 #import "NotificationViewController.h"
 #import "NotificationTableViewCell.h"
 #import "NotificationDetailViewController.h"
+#import "UIColor+Utils.h"
 
 @interface NotificationViewController ()
 
@@ -18,8 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     self.allowPushLabel.text = self.pushLabelText;
+    self.view.backgroundColor = self.bgColor.opaque.duller.lighter;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,14 +35,17 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"];
-    cell.dateLabel.text = @"July 14";
-    cell.titleLabel.text = @"Impact Day!";
+    cell.dateLabel.text = self.data[indexPath.row][@"date"];
+    cell.dateLabel.textColor = self.bgColor.opaque.duller.lighter;
+    cell.titleLabel.text = self.data[indexPath.row][@"title"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.selectedBackgroundView.backgroundColor = self.bgColor;
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.data.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -45,9 +54,13 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NotificationDetailViewController *vc = segue.destinationViewController;
-    vc.titleText = @"Impact Day";
-    vc.detailsText = @"We are going to make some impact!";
-    vc.title = @"Impact Day";
+    NSInteger row = self.tableView.indexPathForSelectedRow.row;
+    NSString *title = self.data[row][@"title"];
+    vc.titleText = title;
+    vc.detailsText = self.data[row][@"text"];
+    vc.title = self.data[row][@"date"];
+    vc.bgColor = self.bgColor;
+    [self.tableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0] animated:YES];
 }
 
 /*

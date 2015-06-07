@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A5962EB1B23997C00230F31 /* GTCNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962EA1B23997C00230F31 /* GTCNavViewController.m */; };
+		9A5962EE1B23AE5300230F31 /* GTCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962ED1B23AE5300230F31 /* GTCDataModel.m */; };
+		9A5962F11B23D8E400230F31 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5962F01B23D8E400230F31 /* UIColor+Utils.m */; };
 		9AD814EA1B235485003F1416 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814E91B235485003F1416 /* main.m */; };
 		9AD814ED1B235485003F1416 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814EC1B235485003F1416 /* AppDelegate.m */; };
 		9AD814F01B235485003F1416 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD814EF1B235485003F1416 /* ViewController.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A5962E91B23997C00230F31 /* GTCNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCNavViewController.h; sourceTree = "<group>"; };
+		9A5962EA1B23997C00230F31 /* GTCNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCNavViewController.m; sourceTree = "<group>"; };
+		9A5962EC1B23AE5300230F31 /* GTCDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCDataModel.h; sourceTree = "<group>"; };
+		9A5962ED1B23AE5300230F31 /* GTCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCDataModel.m; sourceTree = "<group>"; };
+		9A5962EF1B23D8E400230F31 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		9A5962F01B23D8E400230F31 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		9AD814E41B235485003F1416 /* GtC Alerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GtC Alerts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD814E81B235485003F1416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD814E91B235485003F1416 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +106,10 @@
 				9AD814F41B235485003F1416 /* Images.xcassets */,
 				9AD814F61B235485003F1416 /* LaunchScreen.xib */,
 				9AD814E71B235485003F1416 /* Supporting Files */,
+				9A5962EC1B23AE5300230F31 /* GTCDataModel.h */,
+				9A5962ED1B23AE5300230F31 /* GTCDataModel.m */,
+				9A5962EF1B23D8E400230F31 /* UIColor+Utils.h */,
+				9A5962F01B23D8E400230F31 /* UIColor+Utils.m */,
 			);
 			path = "GtC Alerts";
 			sourceTree = "<group>";
@@ -138,6 +151,8 @@
 				9AD815121B236E48003F1416 /* NotificationTableViewCell.m */,
 				9AD815141B237413003F1416 /* NotificationDetailViewController.h */,
 				9AD815151B237413003F1416 /* NotificationDetailViewController.m */,
+				9A5962E91B23997C00230F31 /* GTCNavViewController.h */,
+				9A5962EA1B23997C00230F31 /* GTCNavViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -244,9 +259,12 @@
 			files = (
 				9AD815161B237413003F1416 /* NotificationDetailViewController.m in Sources */,
 				9AD814F01B235485003F1416 /* ViewController.m in Sources */,
+				9A5962EE1B23AE5300230F31 /* GTCDataModel.m in Sources */,
 				9AD8150F1B2367C0003F1416 /* NotificationViewController.m in Sources */,
 				9AD815131B236E48003F1416 /* NotificationTableViewCell.m in Sources */,
+				9A5962EB1B23997C00230F31 /* GTCNavViewController.m in Sources */,
 				9AD814ED1B235485003F1416 /* AppDelegate.m in Sources */,
+				9A5962F11B23D8E400230F31 /* UIColor+Utils.m in Sources */,
 				9AD814EA1B235485003F1416 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +460,7 @@
 				9AD815091B235486003F1416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AD8150A1B235486003F1416 /* Build configuration list for PBXNativeTarget "GtC AlertsTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +469,7 @@
 				9AD8150C1B235486003F1416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

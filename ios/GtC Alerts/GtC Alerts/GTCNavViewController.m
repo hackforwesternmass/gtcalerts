@@ -1,30 +1,35 @@
 //
-//  NotificationDetailViewController.m
+//  GTCNavViewController.m
 //  GtC Alerts
 //
 //  Created by Louis Franco on 6/6/15.
 //  Copyright (c) 2015 Gardening the Community. All rights reserved.
 //
 
-#import "NotificationDetailViewController.h"
-#import "UIColor+Utils.h"
+#import "GTCNavViewController.h"
+#import "ViewController.h"
 
-@interface NotificationDetailViewController ()
+@interface GTCNavViewController ()
 
 @end
 
-@implementation NotificationDetailViewController
+@implementation GTCNavViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titleLabel.text = self.titleText;
-    self.view.backgroundColor = self.bgColor.opaque.duller.lighter;
-    self.detailsTextView.text = self.detailsText;
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if ([self.viewControllers.lastObject isKindOfClass:[ViewController class]]) {
+        return UIStatusBarStyleLightContent;
+    }
+    return [super preferredStatusBarStyle];
 }
 
 /*
