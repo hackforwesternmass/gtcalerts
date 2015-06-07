@@ -22,6 +22,7 @@
 
     self.allowPushLabel.text = self.pushLabelText;
     self.view.backgroundColor = self.bgColor.opaque.duller.lighter;
+    self.allowPushSwitch.on = [self pushIsOn:self.channel];
 }
 
 -(void)viewWillAppear:(BOOL)animated {

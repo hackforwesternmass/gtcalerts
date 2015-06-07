@@ -25,6 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (BOOL)pushIsOn:(NSString *)channel {
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    NSArray *channels = [currentInstallation objectForKey:@"channels"];
+    for (NSString *c in channels) {
+        if ([c isEqualToString:channel]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 - (void)removeFromPush:(NSString *)channel {
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:channel forKey:@"channels"];

@@ -10,6 +10,7 @@
 
 @interface GTCBaseViewController : UIViewController
 
+- (BOOL)pushIsOn:(NSString *)channel;
 - (void)removeFromPush:(NSString *)channel;
 - (void)askForPush:(NSString *)channel;
 
