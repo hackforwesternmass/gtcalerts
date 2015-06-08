@@ -8,7 +8,14 @@
 
 #import "GTCDataModel.h"
 
+@interface GTCDataModel ()
+
+@property (nonatomic, strong) NSDate* lastLoad;
+
+@end
+
 @implementation GTCDataModel
+
 
 +(GTCDataModel *)shared {
     static dispatch_once_t token;
@@ -20,6 +27,11 @@
 }
 
 -(void)reload {
+    NSDate *now = [NSDate date];
+    if (self.lastLoad && [now timeIntervalSinceDate:self.lastLoad] < (60*5)) {
+        return; // only load data at most every 5 minutes.
+    }
+
     NSError *error;
     //-- Make URL request with server
     NSHTTPURLResponse *response = nil;
@@ -29,13 +41,24 @@
     //-- Get request and response though URL
     NSURLRequest *request = [NSURLRequest requestWithURL:url
                                              cachePolicy:NSURLRequestReloadIgnoringCacheData
-                                         timeoutInterval:60.0];
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+                                         timeoutInterval:10.0];
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
     //-- JSON Parsing
-    self.data = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
-    if (error) {
-        
+    id defaultData = @{
+        @"volunteers": @[],
+        @"events": @[],
+        @"veggies": @[],
+        @"donations": @[],
+    };
+    if (responseData && !error) {
+        self.data = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+        if (!error) {
+            self.lastLoad = now;
+        }
+    }
+    if (!self.data) {
+        self.data = defaultData;
     }
 }
 
